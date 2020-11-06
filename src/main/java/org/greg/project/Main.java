@@ -8,7 +8,7 @@ public class Main {
     public static void main(String[] args) {
 //        ApplicationContext context = new ClassPathXmlApplicationContext("context.xml");
         AnnotationConfigApplicationContext context = new AnnotationConfigApplicationContext(SpringConfig.class);
-        MessageRenderer renderer = context.getBean("renderer", MessageRenderer.class);
+        MessageRenderer renderer = context.getBean("MessageRendererImpl", MessageRenderer.class);
         renderer.render();
 
     }

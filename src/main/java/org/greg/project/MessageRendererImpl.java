@@ -1,8 +1,13 @@
 package org.greg.project;
 
+import org.springframework.beans.factory.annotation.Autowired;
+import org.springframework.stereotype.Component;
+
+@Component("MessageRendererImpl")
 public class MessageRendererImpl implements MessageRenderer{
     private final MessageProvider provider;
 
+    @Autowired
     public MessageRendererImpl(MessageProvider provider) {
         this.provider = provider;
     }

@@ -1,8 +1,8 @@
 package org.greg.project;
 
-import lombok.NoArgsConstructor;
+import org.springframework.stereotype.Component;
 
-//@NoArgsConstructor
+@Component
 public class MessageProviderImpl implements MessageProvider {
     public String getMessage() {
         return "Hello World";
